@@ -10,13 +10,19 @@
 
 <body>
 
+   <style>
+      #app div {
+         background-color: ghostwhite;
+      }
+   </style>
+
    <div id="app">
       <div>
          <h1>{{title}}</h1>
       </div>
 
-      <div v-for="item in status">
-         <li>{{item.atividade}}</li>
+      <div v-for="(item, index) in status">
+         <li>{{index}} - {{item.atividade}}</li>
       </div>
    </div>
 
