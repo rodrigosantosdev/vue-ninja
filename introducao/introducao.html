@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Introducão Vuejs</title>
+</head>
+
+<body>
+
+   <!-- vuejs so vai funcionar se eu definir a div pai com ID app -->
+   <div id="app">
+      <h1>{{titulo}}</h1>
+   </div>
+
+
+
+   <!-- powww vuejs esta instalado simples assim... -->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <script>
+      const app = new Vue({
+         el: "#app",
+         data: {
+            titulo: "Vuejs simples assim uebbaaa"
+         }
+      });
+   </script>
+</body>
+
+</html>
