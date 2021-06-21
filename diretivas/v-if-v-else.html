@@ -14,25 +14,14 @@
    <div id="app">
       <h1>{{titulo}}</h1>
 
-      <div v-if="usuario.id == 1">
+      <div v-if="usuario.id === 1">
          <p>ID: {{usuario.id}}</p>
          <p>Nome: {{usuario.nome}}</p>
          <p>Profissao: {{usuario.profissao}}</p>
       </div>
       <div v-else>Nenhum usuario cadastrado com essa ID</div>
 
-      <br>
-
-      <div v-if="usuario.id == 2">
-         <p>ID: {{usuario.id}}</p>
-         <p>Nome: {{usuario.nome}}</p>
-         <p>Profissao: {{usuario.profissao}}</p>
-      </div>
-      <div v-else>Nenhum usuario com id 2</div>
-
    </div>
-
-
 
    <!-- powww vuejs esta instalado simples assim... -->
    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -40,7 +29,7 @@
       const app = new Vue({
          el: "#app",
          data: {
-            titulo: "Vuejs simples assim uebbaaa",
+            titulo: "Vuejs simples assim ueba",
             usuario: {
                id: 1,
                nome: 'Rodrigo Ninja',
